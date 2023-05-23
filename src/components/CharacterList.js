@@ -1,5 +1,4 @@
 import React from "react"
-import { characters } from "../db"
 import Character from "./Character"
 
 function CharacterList({ characters }) {
