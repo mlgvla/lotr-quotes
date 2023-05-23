@@ -2,37 +2,48 @@
 ## React Props Exercise
 
 ### App: 
-- [ ] Import the data.js file into App.js
-- [ ] Render Header and CharacterList components
-- [ ] Pass information from the data.js file to CharacterList (How do we pass information from one component to another?
+- [x] Import the characters from `data.js` file into `App.js`
+- [x] Create a components folder inside the src folder
+- [x] Create `Header`, `CharacterList`, `Character`, `QuoteList`, and `Quote` components inside components folder
+- [x] Pass the characters from the `data.js` file to the `CharacterList` component (How do we pass information from one component to another?)
+- [x] `Header` and `CharacterList` components should be children of the `div` in the App's JSX
 
 ### Header: 
-- [ ] Create header component that returns a div with the className "header"
-- [ ] Inside the div, there should be 2 header elements (h1, h2 etc) 
+- [x] The `Header` component should return a `div` with the className "header"
+- [x] Inside the `div`, there should be:
+  - [x] `h1` with text "Lord of The Rings"
+  - [x] `h2` with text Character Bios
 
 ### CharacterList:
-- [ ] Create a Character component that returns a div with the className "characters-flex"
-- [ ] Create variable that stores a <u>list</u> of Character components 
-- [ ] Use props to pass character data to Character component 
+- [x] The `CharacterList` component should return a `div` with the className "characters-flex"
+- [x] Create variable that stores an array of `Character` components
+- [x] Use props to pass character data to `Character` component
+- [x] Use a key in the `Character` component (use crypto or uuid)
+- [x] Display this array of `Character` components in the JSX 
 
 ### Character:
-- [ ] Destructure prop into variables
-- [ ] Parent div with className "character"
-- [ ] img with image as src and name as alt
-- [ ] h2 for name
-- [ ] p for race  
-- [ ] p status
-- [ ] p weapon of choice
+- [x] Destructure prop into variables
+- [x] Parent `div` with className "character"
+- [x] Inside the `div`, there should be:
+  - [x] `img` with `image` as `src` and `alt`={`Character Portrait of .... `}
+  - [x] `h2` for `name`
+  - [x] `p` for `race`  
+  - [x] `p`  for `status`
+  - [x] `p` for `weapon`
+  - [x] `QuoteList` component - passing `quotes` to the `QuoteList`
 
 ### QuoteList:
-- [ ] Use CharacterList as a template to create QuoteList
-- [ ] QuoteList should return a 'ul' element with the className "quotes"
+- [x] Destructure prop into variable `quotes`
+- [x] `QuoteList` should return a `ul` element with the className "quotes"
+- [x] Create variable that stores an array of Quotes components
+- [x] Use props to pass quote data to `Quote` component
+- [x] Use a key in the `Quote` component (use crypto or uuid)
+- [x] Display this array of `Quote` components in the JSX 
 
 ### Quote:
-- [ ] Use Character as a template to create the Quote component
-- [ ] Use props to accept the quote passed down from QuoteList
-- [ ] Return a single div with the className "quote", with the contents of the quote inside 
+- [x] Destructure prop into variable `quote`
+- [x] Return a single `div` with the className "quote", with the contents of the `quote` inside 
 
 ### Stretch Goals: 
-- [ ] Use conditional rendering using a showQuotes prop to show/hide quotes for each character
-- [ ] Default to showing quotes for character, unless set to false
+- [x] Use conditional rendering in the `Character` component using a `showQuotes` prop to show/hide quotes for each character
+- [x] Default to showing quotes for all characters, unless set to `false`
