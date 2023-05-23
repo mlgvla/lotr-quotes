@@ -1,9 +1,8 @@
 # Lord of The Rings - Character Bios
-### Built with React
-
-- [ ] Import the data.js file into App.js
+## React Props Exercise
 
 ### App: 
+- [ ] Import the data.js file into App.js
 - [ ] Render Header and CharacterList components
 - [ ] Pass information from the data.js file to CharacterList (How do we pass information from one component to another?
 
