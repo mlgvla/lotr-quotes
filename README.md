@@ -1,39 +1,39 @@
 # Lord of The Rings - Character Bios
 ### Built with React
 
- Import the data.js file into App.js
+- [ ] Import the data.js file into App.js
 
-Header Component:
-- [ ] Create header component with
-- [ ] Make a components folder inside the src folder
+### App: 
+- [ ] Render Header and CharacterList components
+- [ ] Pass information from the data.js file to CharacterList (How do we pass information from one component to another?
 
-- [ ] Create a Character component 
-- [ ] div with className "card"
+### Header: 
+- [ ] Create header component that returns a div with the className "header"
+- [ ] Inside the div, there should be 2 header elements (h1, h2 etc) 
 
-CharacterList:
+### CharacterList:
+- [ ] Create a Character component that returns a div with the className "characters-flex"
+- [ ] Create variable that stores a <u>list</u> of Character components 
 - [ ] Use props to pass character data to Character component 
 
-Character:
+### Character:
 - [ ] Destructure prop into variables
-- [ ] Parent Div with className "character"
+- [ ] Parent div with className "character"
 - [ ] img with image as src and name as alt
 - [ ] h2 for name
 - [ ] p for race  
 - [ ] p status
 - [ ] p weapon of choice
 
-QuoteList:
+### QuoteList:
+- [ ] Use CharacterList as a template to create QuoteList
+- [ ] QuoteList should return a <ul> with the className "quotes"
 
-Quote:
-
-Child Elements:
-
-- [ ] Use destructuring to create variables 
-- [ ] Use variables in the JSX
-
-- [ ] Create a Quote component JSX includes a component to hold quote
+### Quote:
+- [ ] Use Character as a template to create the Quote component
+- [ ] Use props to accept the quote passed down from QuoteList
+- [ ] Return a single div with the className "quote", with the contents of the quote inside 
 
 ### Stretch Goals: 
-- [ ] Add a showQuotes prop in Character component 
 - [ ] Use conditional rendering using a showQuotes prop to show/hide quotes for each character
 - [ ] Default to showing quotes for character, unless set to false
