@@ -27,7 +27,7 @@
 
 ### QuoteList:
 - [ ] Use CharacterList as a template to create QuoteList
-- [ ] QuoteList should return a <ul> with the className "quotes"
+- [ ] QuoteList should return a 'ul' element with the className "quotes"
 
 ### Quote:
 - [ ] Use Character as a template to create the Quote component
