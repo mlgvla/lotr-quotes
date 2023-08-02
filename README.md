@@ -2,10 +2,10 @@
 ## React Props Exercise
 
 ### App: 
-- [ ] Import the characters from `data.js` file into `App.js`
+- [ ] Import the characters from `db.js` file into `App.js`
 - [ ] Create a components folder inside the src folder
 - [ ] Create `Header`, `CharacterList`, `Character`, `QuoteList`, and `Quote` components inside components folder
-- [ ] Pass the characters from the `data.js` file to the `CharacterList` component (How do we pass information from one component to another?)
+- [ ] Pass the characters from the `db.js` file to the `CharacterList` component (How do we pass information from one component to another?)
 - [ ] `Header` and `CharacterList` components should be children of the `div` in the App's JSX
 
 ### Header: 
